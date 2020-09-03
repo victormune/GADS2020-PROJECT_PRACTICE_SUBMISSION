@@ -74,7 +74,9 @@
 
 ## LAB_TRANSLATION(CONSOLE INSTRUCTIONS TO COMMAND LINE)
 
-// creating a vpc network named <mynetwork> //
+# VPC Networks Lab Translation
+
+// creating a vpc network named mynetwork //
 
 gcloud compute networks create mynetwork --project=qwiklabs-gcp-04-00b7439920ab --subnet-mode=auto --bgp-routing-mode=regional
 
