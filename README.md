@@ -126,3 +126,33 @@ gcloud compute --project=qwiklabs-gcp-04-00b7439920ab firewall-rules create mana
 gcloud beta compute --project=qwiklabs-gcp-04-00b7439920ab instances create managementnet-us-vm --zone=us-central1-c --machine-type=f1-micro --subnet=managementsubnet-us --network-tier=PREMIUM --maintenance-policy=MIGRATE --service-account=737065806886-compute@developer.gserviceaccount.com --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append --image=debian-9-stretch-v20200805 --image-project=debian-cloud --boot-disk-size=10GB --boot-disk-type=pd-standard --boot-disk-device-name=managementnet-us-vm --reservation-affinity=any
 
 ```
+
+### Creating a VM using cloud shell
+
+'''
+
+//  IN THE CLOUD SHELL //
+
+// To display a list of all the zones in the region enter the following cmd //
+
+	gcloud compute zones list 
+
+// To chose a zone in this case we are chosing zone us-central1-b //
+
+	gcloud config set compute/zone us-central1-b
+
+// To create a VM instance called my-vm-2 in that zone, execute this command //
+
+
+	gcloud compute instances create "my-vm-2" \
+	--machine-type "n1-standard-1" \
+	--image-project "debian-cloud" \
+	--image "debian-9-stretch-v20190213" \
+	--subnet "default"
+
+
+// To check connectivity between the 2 vms use the ping cmd in an SSH session //
+
+	ping my-vm-1
+ 
+ '''
