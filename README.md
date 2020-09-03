@@ -1,4 +1,4 @@
-# GADS2020-PROJECT_PRACTICE_SUBMISSION
+## GADS2020-PROJECT_PRACTICE_SUBMISSION
 
 
 
@@ -33,6 +33,9 @@
   
   <img src="qwiklab_shots/Infrastructure Preview.PNG">
 </details>
+
+
+## LAB_TRANSLATION(CONSOLE INSTRUCTIONS TO COMMAND LINE)
 
 
 <details>
