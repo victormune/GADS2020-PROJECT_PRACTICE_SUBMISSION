@@ -69,5 +69,5 @@
 <details>
  <summary>Lab 11: Classify Images with Pre-built ML Models using Cloud Vision API and AutoML.</summary>
   
- <img src="qwiklab_shots/Classify Images with Pre-built ML Models using Cloud Vision API and AutoML.PNG">
+ <img src="qwiklab_shots/Classify Images with Pre-built ML Models using Cloud Vision API and AutoML..PNG">
 </details>
