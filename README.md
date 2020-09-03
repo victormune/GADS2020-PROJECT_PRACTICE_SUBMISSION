@@ -1,4 +1,4 @@
-## GADS2020-PROJECT_PRACTICE_SUBMISSION
+# GADS2020-PROJECT_PRACTICE_SUBMISSION
 
 
 
@@ -72,9 +72,9 @@
 </details>
 
 
-## LAB_TRANSLATION(CONSOLE INSTRUCTIONS TO COMMAND LINE)
+# LAB_TRANSLATION(CONSOLE INSTRUCTIONS TO COMMAND LINE)
 
-# VPC Networks Lab Translation
+### VPC Networks Lab Translation
 
 // creating a vpc network named mynetwork //
 
