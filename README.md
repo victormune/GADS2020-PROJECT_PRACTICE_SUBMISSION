@@ -34,10 +34,6 @@
   <img src="qwiklab_shots/Infrastructure Preview.PNG">
 </details>
 
-
-## LAB_TRANSLATION(CONSOLE INSTRUCTIONS TO COMMAND LINE)
-
-
 <details>
  <summary>Lab 6: GETTING STARTED WITH APP ENGINE</summary>
   
@@ -74,3 +70,6 @@
   
  <img src="qwiklab_shots/Classify Images with Pre-built ML Models using Cloud Vision API and AutoML..PNG">
 </details>
+
+
+## LAB_TRANSLATION(CONSOLE INSTRUCTIONS TO COMMAND LINE)
