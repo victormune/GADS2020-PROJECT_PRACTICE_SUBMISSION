@@ -71,6 +71,12 @@
  <img src="qwiklab_shots/Classify Images with Pre-built ML Models using Cloud Vision API and AutoML..PNG">
 </details>
 
+<details>
+ <summary>Lab 12: Virtual private networks.</summary>
+  
+ <img src="qwiklab_shots/VPN.PNG">
+</details>
+
 
 # LAB_TRANSLATION(CONSOLE INSTRUCTIONS TO COMMAND LINE)
 
