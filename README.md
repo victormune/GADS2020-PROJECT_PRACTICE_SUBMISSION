@@ -162,3 +162,79 @@ gcloud beta compute --project=gads-proj-1 instances create managementnet-us-vm -
 	ping my-vm-1
  
  ```
+ 
+ ## Setting up developer enviroment Lab translation
+```
+// creating a vm instance //
+
+gcloud beta compute --project=setting_dev_env instances create dev-instance 
+--zone=us-central1-a 
+--machine-type=e2-medium 
+--subnet=default 
+--network-tier=PREMIUM 
+--maintenance-policy=MIGRATE 
+--tags=http-server 
+--image=debian-9-stretch-v20200805 
+--image-project=debian-cloud 
+--boot-disk-size=10GB 
+--boot-disk-type=pd-standard 
+--boot-disk-device-name=dev-instance 
+--reservation-affinity=any
+
+// firewall rules //
+
+gcloud compute --project=setting_dev_env firewall-rules create default-allow-http --direction=INGRESS --priority=1000 
+--network=default --action=ALLOW --rules=tcp:80 --source-ranges=0.0.0.0/0 --target-tags=http-server
+
+
+
+*// in the ssh session to update the deb package //*
+
+	sudo apt-get update
+
+
+// to install git //
+
+	sudo apt-get install git
+
+
+// to download node //
+
+	curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+
+
+
+
+// to install npm and node //
+
+	sudo apt install nodejs
+
+
+// To check the version of Node.js, execute the following command //
+
+	node -v
+
+
+// To clone the class repository, execute the following command //
+
+	git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+
+
+// to change the working directory //
+
+	cd ~/training-data-analyst/courses/developingapps/nodejs/devenv/
+
+// to run the webserver //
+
+	sudo node server/app.js
+
+
+// To install the Node.js library for Compute Engine //
+
+	npm install
+
+
+// To run a simple Node.js application that lists Compute Engine instances //
+
+	node list-gce-instances.js
+```
